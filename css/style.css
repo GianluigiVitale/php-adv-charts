@@ -3,3 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    width: 60vw;
+    margin: 0 auto;
+    padding-top: 50px;
+}

@@ -9,6 +9,10 @@
     </head>
     <body>
 
+        <div class="container">         <!-- contains the monthly sales chart -->
+            <canvas id="sales-month"></canvas>
+        </div>
+
         <script src="js/main.js" charset="utf-8"></script>
     </body>
 </html>
