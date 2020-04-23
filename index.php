@@ -12,6 +12,9 @@
         <div class="container">         <!-- contains the monthly sales chart -->
             <canvas id="sales-month"></canvas>
         </div>
+        <div class="container">         <!-- contains the sales of the salesman -->
+            <canvas id="sales-salesman"></canvas>
+        </div>
 
 
 
@@ -20,7 +23,7 @@
                 < ?php include 'database.php' ?>
                 <canvas id="sales-month" data-database="< ?php echo $database ?>"></canvas>
             </div> -->
-            <script type="text/javascript">
+            <!-- <script type="text/javascript">
             /*
                 < ?php // $data = [1000,1322,1123,2301,3288,988,502,2300,5332,2300,1233,2322]; ?>  // method 1
                 < ?php include 'database.php' ?>                                                     // method 2
@@ -42,10 +45,10 @@
                     },
                 });
             */
-            </script>
+            </script> -->
         <!-- end bad methods -->
 
 
-        <script src="js/main.js" charset="utf-8"></script>
+        <script src="js/app.js" charset="utf-8"></script>
     </body>
 </html>
