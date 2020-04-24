@@ -8,13 +8,26 @@
         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     </head>
     <body>
+        <?php $level = $_GET['level']; ?>
 
-        <div class="container">         <!-- contains the monthly sales chart -->
-            <canvas id="sales-month"></canvas>
-        </div>
-        <div class="container">         <!-- contains the sales of the salesman -->
-            <canvas id="sales-salesman"></canvas>
-        </div>
+        <?php if ($level == 'guest' || $level == 'employee' || $level == 'clevel') { ?>
+            <div class="container">         <!-- contains the monthly sales chart -->
+                <canvas id="sales-month"></canvas>
+            </div>
+        <?php } ?>
+        <?php if ($level == 'employee' || $level == 'clevel') { ?>
+            <div class="container">         <!-- contains the sales of the salesman -->
+                <canvas id="sales-salesman"></canvas>
+            </div>
+        <?php } ?>
+        <?php if ($level == 'clevel') { ?>
+            <div class="container">         <!-- contains the sales of the salesman -->
+                <canvas id="team-efficiency"></canvas>
+            </div>
+        <?php } ?>
+
+
+
 
 
 
@@ -49,6 +62,6 @@
         <!-- end bad methods -->
 
 
-        <script src="js/app.js" charset="utf-8"></script>
+        <script src="js/main.js" charset="utf-8"></script>
     </body>
 </html>
